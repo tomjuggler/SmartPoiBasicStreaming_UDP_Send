@@ -5,4 +5,3 @@ byte pixelConverter(int red, int green, int blue) {
   encodedRGB = byte((red & 0xE0) | ((green & 0xE0)>>3) | (blue >> 6));
   return encodedRGB;
 }
-

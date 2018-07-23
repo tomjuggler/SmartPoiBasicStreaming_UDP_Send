@@ -1,19 +1,4 @@
-import controlP5.*;
 
-
-ControlP5 cp5;
-
-int myColorBackground = color(0, 0, 0);
-int colourGreen = color(0, 255, 0);
-int colourRed = color(255, 0, 0);
-int colourBlue = color(0, 0, 255);
-int redValue = 0;
-int greenValue = 0;
-int blueValue = 0;
-
-Knob myKnobBlue;
-Knob myKnobRed;
-Knob myKnobGreen;
 
 //UDP code:///////////////////////////////////////////////////
 import hypermedia.net.*;
@@ -38,7 +23,7 @@ float speed;
 int maxPx = 36;
 
 void setup() {
-  size(640, 480); //size of my phone screen, for Android Mode
+  size(640, 480); //size of my phone screen
   background(0);
   //frameRate(5); //slow down for testing
   
@@ -93,6 +78,3 @@ void drawColouredThing(color c, int up) {
   sendPGraphicsToPoi(pg2);
   //delay(100); //for testing
 }
-
-
-

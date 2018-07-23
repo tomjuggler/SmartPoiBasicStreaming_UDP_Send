@@ -19,4 +19,3 @@ void sendPGraphicsToPoi(PGraphics pgSend) {
     //delay(100);
   }
 }
-
